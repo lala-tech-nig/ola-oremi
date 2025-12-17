@@ -29,11 +29,11 @@ export default function ConstructionLanding() {
           <span className="font-bold text-xl tracking-tight text-[#003366]">OLA OREMI</span>
         </div>
         <div className="hidden md:flex gap-10 text-[13px] font-semibold text-gray-500 uppercase tracking-wider">
-          <a href="#" className="hover:text-blue-600 transition">Home</a>
-          <a href="#" className="hover:text-blue-600 transition">Services</a>
-          <a href="#" className="hover:text-blue-600 transition">Projects</a>
-          <a href="#" className="hover:text-blue-600 transition">About</a>
-          <a href="#" className="hover:text-blue-600 transition">Contact</a>
+          <a href="/" className="hover:text-blue-600 transition">Home</a>
+          <a href="/services" className="hover:text-blue-600 transition">Services</a>
+          <a href="/projects" className="hover:text-blue-600 transition">Projects</a>
+          <a href="/about" className="hover:text-blue-600 transition">About</a>
+          <a href="/contact" className="hover:text-blue-600 transition">Contact</a>
         </div>
         <button className="bg-[#0052CC] text-white px-6 py-2.5 rounded text-[13px] font-bold hover:bg-blue-800 transition shadow-lg shadow-blue-200">
           Request Quote
