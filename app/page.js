@@ -32,6 +32,7 @@ export default function ConstructionLanding() {
           <a href="/" className="hover:text-blue-600 transition">Home</a>
           <a href="/services" className="hover:text-blue-600 transition">Services</a>
           <a href="/projects" className="hover:text-blue-600 transition">Projects</a>
+          <a href="/property" className="hover:text-blue-600 transition">Property Sales</a>
           <a href="/about" className="hover:text-blue-600 transition">About</a>
           <a href="/contact" className="hover:text-blue-600 transition">Contact</a>
         </div>
