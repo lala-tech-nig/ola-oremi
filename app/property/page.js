@@ -140,9 +140,23 @@ export default function PropertySalesPage() {
                 {/* Price & Action */}
                 <div className="flex items-center justify-between">
                   <span className="text-[#0052CC] font-bold text-lg">{asset.price}</span>
-                  <button className="bg-[#0052CC] text-white px-5 py-2.5 rounded-lg text-xs font-bold hover:bg-blue-700 transition">
-                    Enquire Now
-                  </button>
+                  {
+                    (() => {
+                      const phone = '2348001234567';
+                      const message = `Hello, I'm interested in ${asset.title} located at ${asset.location}. Price: ${asset.price}. Please provide more details.`;
+                      const waLink = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+                      return (
+                        <a
+                          href={waLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-[#25D366] text-white px-5 py-2.5 rounded-lg text-xs font-bold hover:bg-[#1ebe57] transition"
+                        >
+                          Enquire Now
+                        </a>
+                      );
+                    })()
+                  }
                 </div>
               </div>
             </div>

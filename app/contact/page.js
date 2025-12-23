@@ -1,9 +1,7 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock, Send, Facebook, Instagram, Linkedin, ExternalLink } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, ExternalLink } from 'lucide-react';
 import ContactMethodCard from '../components/ContactMethodCard';
 import FormGroup from '../components/FormGroup';
-import SocialIcon from '../components/SocialIcon';
-import FooterNav from '../components/FooterNav';
 
 export default function ContactPage() {
   return (
@@ -90,5 +88,3 @@ export default function ContactPage() {
     </div>
   );
 }
-  );
-} 
