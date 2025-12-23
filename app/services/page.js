@@ -1,43 +1,10 @@
 import React from 'react';
-import { 
-  Microscope, 
-  Hammer, 
-  LayoutGrid, 
-  Home, 
-  Handshake, 
-  Map as MapIcon, 
-  ArrowRight, 
-  Users, 
-  ShieldCheck, 
-  CheckCircle,
-  Settings,
-  Facebook,
-  Linkedin
-} from 'lucide-react';
+import { Microscope, Hammer, LayoutGrid, Home, Handshake, Map as MapIcon, ArrowRight, Users, ShieldCheck, CheckCircle, Settings, Facebook, Linkedin } from 'lucide-react';
+import ServiceCard from '../components/ServiceCard';
 
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-white font-sans text-[#4A5568]">
-      {/* --- Navigation Bar --- */}
-      <nav className="flex items-center justify-between px-8 md:px-20 py-4 bg-white border-b border-gray-100 sticky top-0 z-50">
-        <div className="flex items-center gap-2">
-          <div className="bg-[#0052CC] p-1.5 rounded-md">
-            <Settings size={18} className="text-white" />
-          </div>
-          <span className="font-bold text-xl tracking-tight text-[#003366]">OLA-OREMI NIGERIA LTD</span>
-        </div>
-        <div className="hidden md:flex gap-10 text-[13px] font-semibold text-gray-500 uppercase tracking-widest">
-          <a href="/" className="hover:text-[#0052CC] transition">Home</a>
-          <a href="/services" className="text-[#0052CC]">Services</a>
-          <a href="/projects" className="hover:text-[#0052CC] transition">Projects</a>
-          <a href="/about" className="hover:text-[#0052CC] transition">About Us</a>
-          <a href="/contact" className="hover:text-[#0052CC] transition">Contact</a>
-        </div>
-        <button className="bg-[#0052CC] text-white px-6 py-2.5 rounded-md text-[13px] font-bold hover:bg-blue-800 transition shadow-lg shadow-blue-100">
-          Request Quote
-        </button>
-      </nav>
-
       {/* --- Hero Section --- */}
       <section className="relative bg-[#001A3D] text-white py-32 px-6 overflow-hidden">
         {/* Abstract Background Elements */}
@@ -153,73 +120,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* --- Footer --- */}
-      <footer className="bg-white px-8 md:px-20 pt-20 pb-10 border-t border-gray-100">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 mb-16">
-          <div className="max-w-xs">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="bg-[#0052CC] p-1 rounded-sm">
-                <Settings size={14} className="text-white" />
-              </div>
-              <span className="font-bold text-lg text-[#003366]">OLA-OREMI NIGERIA LTD</span>
-            </div>
-            <p className="text-gray-400 text-[13px] leading-relaxed">
-              Building the future with integrity, quality, and engineering excellence across Nigeria.
-            </p>
-          </div>
-          
-          <div className="flex gap-20">
-            <div>
-              <h4 className="font-bold text-sm mb-6 text-[#002B5B]">Services</h4>
-              <ul className="space-y-3 text-[13px] text-gray-500">
-                <li className="hover:text-[#0052CC] cursor-pointer">Soil Testing</li>
-                <li className="hover:text-[#0052CC] cursor-pointer">Piling</li>
-                <li className="hover:text-[#0052CC] cursor-pointer">Construction</li>
-                <li className="hover:text-[#0052CC] cursor-pointer">Real Estate</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-sm mb-6 text-[#002B5B]">Company</h4>
-              <ul className="space-y-3 text-[13px] text-gray-500">
-                <li className="hover:text-[#0052CC] cursor-pointer">About Us</li>
-                <li className="hover:text-[#0052CC] cursor-pointer">Projects</li>
-                <li className="hover:text-[#0052CC] cursor-pointer">Careers</li>
-                <li className="hover:text-[#0052CC] cursor-pointer">Contact</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div className="max-w-7xl mx-auto pt-8 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[11px] text-gray-400 uppercase tracking-widest">
-            © 2023 OLA-OREMI NIGERIA LTD. All rights reserved.
-          </p>
-          <div className="flex gap-6">
-            <Facebook size={16} className="text-gray-400 hover:text-[#0052CC] cursor-pointer" />
-            <Linkedin size={16} className="text-gray-400 hover:text-[#0052CC] cursor-pointer" />
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-}
-
-{/* --- Reusable Components --- */}
-
-function ServiceCard({ icon, title, desc }) {
-  return (
-    <div className="p-10 bg-white border border-gray-100 rounded-2xl hover:shadow-[0_20px_40px_rgba(0,0,0,0.06)] hover:border-blue-100 transition-all group">
-      <div className="bg-blue-50 w-12 h-12 flex items-center justify-center rounded-lg text-[#0052CC] mb-8 group-hover:bg-[#0052CC] group-hover:text-white transition-colors duration-300">
-        {React.cloneElement(icon, { size: 24 })}
-      </div>
-      <h3 className="text-xl font-bold text-[#002B5B] mb-4">{title}</h3>
-      <p className="text-gray-500 text-[13px] leading-relaxed mb-8">
-        {desc}
-      </p>
-      <a href="#" className="inline-flex items-center gap-2 text-[#0052CC] font-bold text-[10px] uppercase tracking-[0.2em] group/link">
-        Learn More 
-        <ArrowRight size={12} className="group-hover/link:translate-x-1 transition-transform" />
-      </a>
     </div>
   );
 }
@@ -227,13 +127,9 @@ function ServiceCard({ icon, title, desc }) {
 function CommitmentItem({ icon, title, desc }) {
   return (
     <div className="flex flex-col gap-4">
-      <div className="text-[#0052CC]">
-        {icon}
-      </div>
+      <div className="text-[#0052CC]">{icon}</div>
       <h4 className="font-bold text-[#002B5B] text-base">{title}</h4>
-      <p className="text-gray-500 text-[13px] leading-relaxed">
-        {desc}
-      </p>
+      <p className="text-gray-500 text-[13px] leading-relaxed">{desc}</p>
     </div>
   );
 }

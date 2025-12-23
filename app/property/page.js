@@ -1,23 +1,6 @@
 import React from 'react';
-import { 
-  Building2, 
-  Home, 
-  Map as MapIcon, 
-  Briefcase, 
-  Truck, 
-  Settings, 
-  MapPin, 
-  BedDouble, 
-  Bath, 
-  Square, 
-  FileText, 
-  Car, 
-  Cpu, 
-  Phone, 
-  Mail, 
-  Globe, 
-  Share2 
-} from 'lucide-react';
+import { Building2, Home, Map as MapIcon, Briefcase, Truck, Settings, MapPin, BedDouble, Bath, Square, FileText, Car, Cpu, Phone, Mail, Globe, Share2 } from 'lucide-react';
+import FooterNav from '../components/FooterNav';
 
 export default function PropertySalesPage() {
   const assets = [
@@ -101,22 +84,6 @@ export default function PropertySalesPage() {
 
   return (
     <div className="min-h-screen bg-white font-sans text-[#4A5568]">
-      {/* --- Navigation --- */}
-      <nav className="flex items-center justify-between px-8 md:px-20 py-4 border-b border-gray-100 bg-white sticky top-0 z-50">
-        <div className="flex items-center gap-2">
-          <div className="bg-[#0052CC] p-1.5 rounded text-white"><Building2 size={20} /></div>
-          <span className="font-bold text-lg text-[#003366] tracking-tight uppercase">OLA-OREMI NIGERIA LTD</span>
-        </div>
-        <div className="hidden md:flex gap-10 text-[13px] font-semibold text-gray-500 uppercase tracking-widest">
-          <a href="/" className="hover:text-[#0052CC]">Home</a>
-          <a href="/about" className="hover:text-[#0052CC]">About Us</a>
-          <a href="/projects" className="hover:text-[#0052CC]">Projects</a>
-          <a href="/property" className="text-[#0052CC]">Property Sales</a>
-          <a href="/contact" className="hover:text-[#0052CC]">Contact</a>
-        </div>
-        <button className="bg-[#0052CC] text-white px-6 py-2.5 rounded font-bold text-sm shadow-lg shadow-blue-100">Get Quote</button>
-      </nav>
-
       {/* --- Hero Section --- */}
       <section className="relative h-[450px] flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -203,42 +170,6 @@ export default function PropertySalesPage() {
         </div>
       </section>
 
-      {/* --- Footer --- */}
-      <footer className="bg-white border-t border-gray-100 pt-20 pb-10 px-8 md:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
-          <div className="col-span-1">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="bg-[#0052CC] p-1 rounded text-white"><Building2 size={16} /></div>
-              <span className="font-bold text-[#003366] tracking-tight uppercase">OLA-OREMI NIGERIA LTD</span>
-            </div>
-            <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Leading the way in construction excellence and property development across Nigeria. We build with precision and integrity.
-            </p>
-            <div className="flex gap-4">
-              <div className="p-2 border border-gray-100 rounded-full text-gray-400 hover:text-blue-600 cursor-pointer"><Globe size={18} /></div>
-              <div className="p-2 border border-gray-100 rounded-full text-gray-400 hover:text-blue-600 cursor-pointer"><Share2 size={18} /></div>
-            </div>
-          </div>
-          
-          <FooterLinks title="Quick Links" links={['Our Projects', 'Property Sales', 'Company Profile', 'Careers']} />
-          <FooterLinks title="Services" links={['Soil Testing', 'Piling', 'Construction', 'Real Estate']} />
-
-          <div>
-            <h4 className="font-bold text-[#002B5B] mb-6">Contact Us</h4>
-            <div className="space-y-4 text-sm text-gray-500">
-              <p className="flex gap-3"><MapPin size={16} className="text-blue-600 shrink-0" /> 123 Construction Ave, Ikeja, Lagos</p>
-              <p className="flex gap-3"><Phone size={16} className="text-blue-600 shrink-0" /> +234 800 123 4567</p>
-              <p className="flex gap-3"><Mail size={16} className="text-blue-600 shrink-0" /> sales@olaoremi.com.ng</p>
-            </div>
-          </div>
-        </div>
-        
-        <div className="text-center pt-8 border-t border-gray-50">
-          <p className="text-[11px] text-gray-400 uppercase tracking-widest font-medium">
-            © 2024 OLA-OREMI NIGERIA LIMITED. All rights reserved.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }

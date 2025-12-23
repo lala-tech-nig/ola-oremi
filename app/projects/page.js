@@ -1,11 +1,5 @@
 import React from 'react';
-import { 
-  Search, 
-  MapPin, 
-  ChevronLeft, 
-  ChevronRight, 
-  Settings 
-} from 'lucide-react';
+import { Search, MapPin, ChevronLeft, ChevronRight, Settings } from 'lucide-react';
 
 export default function ProjectsPage() {
   const projects = [
@@ -57,26 +51,6 @@ export default function ProjectsPage() {
 
   return (
     <div className="min-h-screen bg-[#F8F9FA] font-sans text-[#1A202C]">
-      {/* --- Header/Nav --- */}
-      <nav className="flex items-center justify-between px-8 md:px-20 py-4 bg-white border-b border-gray-100 sticky top-0 z-50">
-        <div className="flex items-center gap-2">
-          <div className="bg-[#0052CC] p-1 rounded">
-            <Settings size={18} className="text-white" />
-          </div>
-          <span className="font-bold text-xl tracking-tight text-[#003366]">OLA-OREMI</span>
-        </div>
-        <div className="hidden md:flex gap-10 text-[13px] font-semibold text-gray-500 uppercase tracking-widest">
-          <a href="/" className="hover:text-[#0052CC]">Home</a>
-          <a href="/about" className="hover:text-[#0052CC]">About Us</a>
-          <a href="/services" className="hover:text-[#0052CC]">Services</a>
-          <a href="/projects" className="text-[#0052CC]">Projects</a>
-          <a href="/contact" className="hover:text-[#0052CC]">Contact</a>
-        </div>
-        <button className="bg-[#0052CC] text-white px-6 py-2.5 rounded-md text-[13px] font-bold shadow-lg shadow-blue-100 hover:bg-blue-700 transition">
-          Get a Quote
-        </button>
-      </nav>
-
       {/* --- Hero Section --- */}
       <section className="relative h-[480px] md:h-[550px] mx-8 mt-6 rounded-[32px] overflow-hidden flex items-center justify-center text-center">
         <div className="absolute inset-0 z-0">
@@ -196,12 +170,6 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      {/* --- Footer --- */}
-      <footer className="bg-white py-12 px-8 border-t border-gray-100 text-center">
-        <p className="text-[11px] font-bold text-gray-400 uppercase tracking-[0.2em]">
-          © 2024 OLA-OREMI NIGERIA LIMITED. All rights reserved.
-        </p>
-      </footer>
     </div>
   );
 }
