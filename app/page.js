@@ -56,7 +56,7 @@ export default function HomePage() {
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
           <div className="rounded-2xl overflow-hidden shadow-2xl">
-            <img src="https://images.unsplash.com/photo-1590644365607-1c5a519a7a37?q=80&w=2070" className="w-full aspect-square object-cover" alt="Soil Layers" />
+            <img src="/pile.jpeg" className="w-full aspect-square object-cover" alt="Soil Layers" />
           </div>
 
           <div>

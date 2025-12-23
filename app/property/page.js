@@ -142,7 +142,7 @@ export default function PropertySalesPage() {
                   <span className="text-[#0052CC] font-bold text-lg">{asset.price}</span>
                   {
                     (() => {
-                      const phone = '2348001234567';
+                      const phone = '2347033332733';
                       const message = `Hello, I'm interested in ${asset.title} located at ${asset.location}. Price: ${asset.price}. Please provide more details.`;
                       const waLink = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
                       return (
