@@ -63,7 +63,7 @@ export default function ServicesPage() {
           />
           <ServiceCard 
             icon={<Handshake />} 
-            title="Property Sales" 
+            title="Property Lease & Sales" 
             desc="Premium finished properties ready for residential living or commercial use, built to modern standards." 
           />
           <ServiceCard 
